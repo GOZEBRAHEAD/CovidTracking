@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  font-size: 16px;
+  font-family: 'Urbanist', sans-serif;
+  color: #fafafa;
+  background-color: #27496d;
+  user-select: none; }
+
+.index__container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-areas: "index-title" "index-search" "index-data" "index-footer"; }
+  .index__container__titles {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .index__container__titles__title {
+      grid-area: index-title;
+      font-size: 3rem;
+      padding-bottom: 0.45rem;
+      letter-spacing: 0.2rem;
+      border-bottom: 2px solid #6583a8;
+      margin-bottom: 2.5rem; }
+    .index__container__titles label {
+      grid-area: index-search;
+      font-size: 1.15rem; }
+      .index__container__titles label input {
+        height: 1.4rem;
+        width: 12rem;
+        font-size: 1rem;
+        margin: 0 0.4rem;
+        padding: 0.2rem 0.4rem;
+        border: none;
+        border-radius: 4px;
+        background-color: #fafafa; }
+        .index__container__titles label input:focus {
+          outline: none; }
+      .index__container__titles label .fa-search {
+        cursor: pointer; }
+  .index__container__data {
+    grid-area: index-data;
+    height: 21rem;
+    width: 95vw;
+    display: grid;
+    place-items: center; }
+    .index__container__data__wrapper {
+      height: 100%;
+      width: 80vw;
+      overflow-y: auto; }
+      .index__container__data__wrapper__content {
+        height: 100%;
+        width: 100%;
+        background-color: #252B31;
+        color: #e6f8f9; }
+        .index__container__data__wrapper__content__head__row {
+          background-color: #6583a8; }
+        .index__container__data__wrapper__content__head__row th,
+        .index__container__data__wrapper__content__body__row td {
+          padding: 0.5rem 2rem;
+          text-align: center; }
+        .index__container__data__wrapper__content__body__row td {
+          letter-spacing: 0.05rem; }
+        .index__container__data__wrapper__content__body__row__delete {
+          font-size: 1.25rem;
+          color: crimson;
+          cursor: pointer; }
+  .index__container__footer {
+    grid-area: index-footer;
+    height: 3rem;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .index__container__footer a {
+      font-size: 2rem;
+      color: #e6f8f9;
+      transition: transform 0.2s linear; }
+      .index__container__footer a:hover {
+        transform: translateY(-5px);
+        border-bottom: 2px solid #272343;
+        padding-bottom: 0.2rem; }

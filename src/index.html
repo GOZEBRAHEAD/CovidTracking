@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/c39033e14b.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Covid Tracking APP</title>
+</head>
+<body>
+
+    <div class="index__container">
+
+        <header class="index__container__titles">
+
+            <h1 class="index__container__titles__title">Covid-19 tracking app</h1>
+
+            <label for="country">
+                Country:
+                <input type="search" id="input-country" />
+                <i class="fas fa-search" id="btn-searchCountry"></i>
+            </label>
+
+        </header>
+
+        <main class="index__container__data">
+
+            <div class="index__container__data__wrapper">
+
+                <table class="index__container__data__wrapper__content">
+                    
+                    <thead>
+                        <tr class="index__container__data__wrapper__content__head__row">
+                            <th>Country</th>
+                            <th>Continent</th>
+                            <th>Confirmed cases</th>
+                            <th>Total deaths</th>
+                            <th>Total population</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+        <footer class="index__container__footer">
+
+            <a href="https://github.com/GOZEBRAHEAD" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/luciano-nieves/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/lucho_nieves/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+        </footer>
+
+    </div>
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
