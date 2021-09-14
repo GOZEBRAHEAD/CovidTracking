@@ -82,7 +82,8 @@ const loadSavedItems = () => {
 
 const loadAPI = () => {
 
-    countrySelected = countryInput.value;
+    let wordInput = countryInput.value;
+    countrySelected = wordInput.charAt(0).toUpperCase() + wordInput.slice(1).toLowerCase();
 
     countryInput.value = "";
 
